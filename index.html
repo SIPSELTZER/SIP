@@ -21,7 +21,7 @@
         }
 
         section {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
@@ -29,12 +29,49 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2 {
+        h1, h2, h3 {
             color: #3498db;
         }
 
         p {
             color: #666;
+        }
+
+        .hero {
+            position: relative;
+            height: 400px;
+            background: url('hero-image.jpg') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .shop-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
         }
 
         .product {
@@ -50,7 +87,7 @@
         }
 
         .product-info {
-            max-width: 400px;
+            max-width: 600px;
             margin-left: 20px;
         }
 
@@ -82,22 +119,24 @@
 <body>
 
     <header>
-        <!-- Replace the logo placeholder with your own image -->
-        <img src="your-logo.png" alt="SIP Logo">
         <h1>SIP Seltzer</h1>
     </header>
 
-    <section>
+    <div class="hero">
+        <h1>Sip the Bubbles, Embrace the Fizz</h1>
+        <p>Discover the refreshing taste of our passionfruit seltzer.</p>
+        <a href="#shop" class="shop-button">Shop Now</a>
+    </div>
+
+    <section id="shop">
         <h2>Featured Product</h2>
 
         <div class="product">
-            <!-- Use an image of a 20 liter keg for the product -->
             <img src="keg-image.jpg" alt="20 Liter Keg">
             <div class="product-info">
                 <h3>Passionfruit Seltzer - 20L Keg</h3>
                 <p>Enjoy the refreshing taste of passionfruit seltzer in our 20-liter keg.</p>
                 <p>Price: 62.50 euros</p>
-                <p>Slogan: Sip the bubbles, embrace the fizz.</p>
                 <a href="#" class="buy-button">Buy Now</a>
             </div>
         </div>
